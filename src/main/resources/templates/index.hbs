@@ -1,0 +1,22 @@
+{{#partial "content"}}
+
+<h1>CD list!</h1>
+
+<p>Add a new CD:</p>
+
+<form action="/cds/new" method="POST">
+    <label for="name">CD Name</label>
+    <input id="name" name="name" type="text">
+
+    <label for="artist">CD Artist</label>
+    <input id="artist" name="artist" type="text">
+
+    <button type="submit" class="btn btn-default">Add CD</button>
+</form>
+
+<form action="/display" method="GET">
+    <button type="submit" class="btn btn-default">Show all</button>
+</form>
+{{/partial}}
+
+{{> layout.hbs}}

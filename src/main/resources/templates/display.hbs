@@ -1,0 +1,14 @@
+{{#partial "content"}}
+
+    <h1>CD List:</h1>
+    {{#if cds}}
+        {{#each cds}}
+            <p>{{ cdName }}</p>
+            <p>{{cdArtist}}</p>
+        {{/each}}
+    {{else}}
+    <p>No CDs</p>
+    {{/if}}
+{{/partial}}
+
+{{> layout.hbs}}
